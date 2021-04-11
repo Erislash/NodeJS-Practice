@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #4297be;
+    padding: 2.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__links{
+    list-style: none;
+    display: flex;
+}
+
+.navbar__link{
+    margin-right: 3rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s ease;
+}
+.navbar__link.active{
+    border-color: #fff;
+}
+
+.navbar__link:hover{
+    border-color: #fff;
+}
+
+.navbar__link a{
+    text-decoration: none;
+    color: #fff;
+}
