@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        header.mainHeader
+            nav.mainHeader__nav
+                ul.mainHeader__items
+                    li.mainHeader__item.active
+                        a(href="/") Shop
+
+                    li.mainHeader__item
+                        a(href="/admin/add-product") Add Product
+        
+        main
+            if products.length > 0
+                .products
+                    ul
+                        each product in products
+                            article.product 
+                                header.product__title #{product.title}
+                                .product__img 
+                                    img(src="https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040_960_720.jpg", alt="Cupcake")
+                                .product__body
+                                    .product__price $19.99
+                                    .product__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cumque    laudantium, reprehenderit distinctio exercitationem magni quam animi doloremque rem impedit!
+            else
+                h2 No products

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <nav class="mainHeader__nav">
+            <ul class="mainHeader__items">
+                <li class="mainHeader__item active"><a href="/">Shop</a></li>
+                <li class="mainHeader__item"><a href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My products</h1>
+        <% if (products.length > 0) {%>
+        <div class="products">
+            <ul>
+                <%products.forEach(product => {%>
+                    <article class="product">
+                        <header>
+                            <h2 class="product__title"><%= product.title %></h2>
+                            <div class="product__img">
+                                <img src="https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040_960_720.jpg" alt="">
+                            </div>
+                        </header> 
+                        <div class="product__body">
+                            <div class="product__price">$19.99</div>
+                            <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cumque    laudantium, reprehenderit distinctio exercitationem magni quam animi doloremque rem impedit!</p>
+                        </div>
+                    </article>
+                <%})%>
+            </ul>
+        </div>
+        <%} else {%>
+            <h2>No products found</h2>
+        <%} %>
+    </main>
+</body>
+</html>
