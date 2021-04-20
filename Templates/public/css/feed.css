@@ -1,0 +1,35 @@
+@import 'common.css';
+
+.posts{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.post{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+
+.post__title{
+    margin-bottom: 1rem;
+}
+
+.post__body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post__more{
+    color: #4297be;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.post__more:hover{
+    color: #0b4966;
+}

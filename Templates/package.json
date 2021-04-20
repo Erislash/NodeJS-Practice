@@ -1,20 +1,17 @@
 {
-  "name": "express",
+  "name": "template-engines",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A practice to improve my skills working with template engines",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon server"
+  },
+  "author": "Erik Gimenez",
+  "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
     "pug": "^3.0.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
