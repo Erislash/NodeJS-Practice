@@ -1,0 +1,12 @@
+<%- include('./partials/__header'); %>
+<main>
+    <h2>Posts</h2>
+    <hr>
+    <% for(post of posts) {%>
+        <div class="post">
+            <h4><%= `${post.id} - ${post.title}` %></h4>
+            <p><%= post.body %></p>
+        </div>
+    <%}%>
+</main>
+<%- include('./partials/__footer'); %>

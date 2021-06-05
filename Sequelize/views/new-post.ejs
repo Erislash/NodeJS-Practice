@@ -1,0 +1,25 @@
+<%- include('./partials/__header'); %>
+<main>
+    <div class="row">
+        <form class="col s12" action="new-post" method="POST">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="title" type="text" name="title" class="validate">
+                    <label for="title">Title</label>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="body" name="body" class="materialize-textarea"></textarea>
+                  <label for="body">Body</label>
+                </div>
+              </div>
+
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>            
+        </form>
+    </div>
+</main>
+<%- include('./partials/__footer'); %>
